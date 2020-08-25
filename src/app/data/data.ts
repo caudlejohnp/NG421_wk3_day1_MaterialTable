@@ -24,8 +24,8 @@ const GROUP: IGroup[] = [
     },
     {
         playerName: 'Trent',
-        charName: "Bob",
-        race: 'Human',
+        charName: 'Eric Hennequet',
+        race: 'Half-Elf',
         class: 'Cleric',
         level: 5,
     },
@@ -38,7 +38,7 @@ const GROUP: IGroup[] = [
     },
     {
         playerName: 'Isaiah',
-        charName: 'Nabiros',
+        charName: 'Arthur Darklyn',
         race: 'Human',
         class: 'Fighter',
         level: 5,

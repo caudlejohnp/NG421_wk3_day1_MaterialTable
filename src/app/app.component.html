@@ -1,30 +1,43 @@
-<!-- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-    
+<table
+  mat-table
+  matSort
+  [dataSource]="dataSource"
+  class="mat-elevation-z8"
+  align="center"
+  width="80%"
+>
   <ng-container matColumnDef="playerName">
-    <th mat-header-cell *matHeaderCellDef>Player Name</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Player Name</th>
     <td mat-cell *matCellDef="let element">{{element.playerName}}</td>
   </ng-container>
 
   <ng-container matColumnDef="charName">
-    <th mat-header-cell *matHeaderCellDef>Character Name</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Character Name</th>
     <td mat-cell *matCellDef="let element">{{element.charName}}</td>
   </ng-container>
 
   <ng-container matColumnDef="race">
-    <th mat-header-cell *matHeaderCellDef>Race</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Race</th>
     <td mat-cell *matCellDef="let element">{{element.race}}</td>
   </ng-container>
 
   <ng-container matColumnDef="class">
-    <th mat-header-cell *matHeaderCellDef>Class</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Class</th>
     <td mat-cell *matCellDef="let element">{{element.class}}</td>
   </ng-container>
 
   <ng-container matColumnDef="level">
-    <th mat-header-cell *matHeaderCellDef>Character Level</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Character Level</th>
     <td mat-cell *matCellDef="let element">{{element.level}}</td>
   </ng-container>
- -->
-  <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table> -->
+</table>
+
+<!-- HOW TO ADD AN ARRAY TO THE TABLE -->
+
+<!-- <ng-container matColumnDef="level">
+    <th mat-header-cell *matHeaderCellDef>Character Level</th>
+    <td mat-cell *matCellDef="let element">{{element.level.join(', ')}}</td>
+  </ng-container> -->
