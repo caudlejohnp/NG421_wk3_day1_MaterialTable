@@ -17,7 +17,7 @@ const IGROUP: IGroup[] = [
     },
     {
         playerName: 'Nate',
-        charName: 'Kijit',
+        charName: 'Kijit Softpaw',
         race: 'Catfolk',
         class: 'Alchemist',
         level: 5,
@@ -31,7 +31,7 @@ const IGROUP: IGroup[] = [
     },
     {
         playerName: 'Nikki',
-        charName: 'Angelica',
+        charName: 'Angelica Starfire',
         race: 'Human',
         class: 'Kinectist',
         level: 5,
