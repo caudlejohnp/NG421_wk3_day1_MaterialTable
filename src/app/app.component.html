@@ -1,11 +1,9 @@
-<table
-  mat-table
-  matSort
-  [dataSource]="dataSource"
-  class="mat-elevation-z8"
-  align="center"
-  width="80%"
->
+<mat-form-field>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="filter">
+</mat-form-field>
+
+<table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8" align="center" width="80%">
+
   <ng-container matColumnDef="playerName">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>Player Name</th>
     <td mat-cell *matCellDef="let element">{{element.playerName}}</td>
@@ -35,9 +33,10 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
+
 <!-- HOW TO ADD AN ARRAY TO THE TABLE -->
 
-<!-- <ng-container matColumnDef="level">
+  <!-- <ng-container matColumnDef="level">
     <th mat-header-cell *matHeaderCellDef>Character Level</th>
     <td mat-cell *matCellDef="let element">{{element.level.join(', ')}}</td>
   </ng-container> -->
