@@ -1,6 +1,6 @@
 import { IGroup } from '../interface/igroup';
 
-const IGROUP: IGroup[] = [
+const GROUP: IGroup[] = [
     {
         playerName: 'Braxton',
         charName: 'Thiago Hennequet',
@@ -43,4 +43,5 @@ const IGROUP: IGroup[] = [
         class: 'Fighter',
         level: 5,
     }
-]
+];
+export { GROUP };
